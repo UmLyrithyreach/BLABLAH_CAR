@@ -1,5 +1,5 @@
-import 'package:blabla/ui/theme/theme.dart';
-import 'package:blabla/utils/date_time_utils.dart';
+import 'package:blablah_car/ui/theme/theme.dart';
+import 'package:blablah_car/utils/date_time_utils.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../model/ride_pref/ride_pref.dart';
