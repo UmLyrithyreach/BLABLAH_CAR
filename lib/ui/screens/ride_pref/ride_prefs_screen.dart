@@ -12,11 +12,19 @@ const String blablaHomeImagePath = 'assets/images/blabla_home.png';
 /// - Enter his/her ride preference and launch a search on it
 /// - Or select a last entered ride preferences and launch a search on it
 ///
-class RidePrefsScreen extends StatelessWidget {
+class RidePrefsScreen extends StatefulWidget {
   const RidePrefsScreen({super.key});
 
+  @override
+  State<RidePrefsScreen> createState() => _RidePrefsScreenState();
+}
+
+class _RidePrefsScreenState extends State<RidePrefsScreen> {
   void onRidePrefSelected(RidePref ridePref) {
     // TODO
+    RidePrefsService.selectedRidePref = ridePref;
+
+    
   }
 
   @override
